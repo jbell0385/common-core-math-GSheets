@@ -1,0 +1,19 @@
+{
+  "name": "common-core-math-standards",
+  "version": "1.0.0",
+  "description": "Brings the common core math standards into Google Spreadsheets.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbell0385/common-core-math-GSheets.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbell0385/common-core-math-GSheets/issues"
+  },
+  "homepage": "https://github.com/jbell0385/common-core-math-GSheets#readme"
+}
