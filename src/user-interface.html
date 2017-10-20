@@ -9,8 +9,13 @@
   </head>
   <body>
     <div id="app">
-      <input type="text" id="myInput" v-model="message">
-      <div id="myOutput">{{message}}</div>
+      <div id="listContainer">
+          <ul>
+              <template v-for="listItem in listItems">
+                <li @click="getStandard">{{listItem}}</li>
+              </template>
+          </ul>
+      </div>
     </div>
 
     <!-- CDNS for jquery and bootstrap -->

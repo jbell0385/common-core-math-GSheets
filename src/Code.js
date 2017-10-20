@@ -6,9 +6,15 @@ function onOpen() {
 }
 
 function showSidebar() {
-  var html = HtmlService.createHtmlOutputFromFile('user-interface')
+  var html = HtmlService.createTemplateFromFile('user-interface')
+      .evaluate()
       .setTitle('My custom sidebar')
       .setWidth(300);
   SpreadsheetApp.getUi() // Or DocumentApp or FormApp.
       .showSidebar(html);
+}
+
+
+function include(filename) {
+  return HtmlService.createHtmlOutputFromFile(filename).getContent();
 }
