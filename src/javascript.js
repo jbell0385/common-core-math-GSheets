@@ -50,6 +50,7 @@ new Vue({
                 this.breadCrumb.pop();
                 this.listItems = ["Mathematics","English Language Arts"];
             }
+            this.stdDesc = "";
         }
     }
 });
