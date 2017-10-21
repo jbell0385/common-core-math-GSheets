@@ -1,4 +1,4 @@
-{
+var standards = {
     "Mathematics":{
         "Kindergarten":{
             "K.CC":{
