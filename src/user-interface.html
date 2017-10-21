@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
-  </head>
-  <body>
+    <?!= include('style'); ?>
+</head>
+
+<body>
     <div id="app">
-      <div id="listContainer">
-          <ul>
-              <template v-for="listItem in listItems">
-                <li @click="getStandard">{{listItem}}</li>
-              </template>
-          </ul>
-      </div>
-      <div id="btn-back" @click="goBack">
-        Back
-      </div>
-      <div id="standard" >{{stdDesc}}</div>
+        <div id="listContainer">
+            <template class="std-list" v-for="listItem in listItems">
+                <a class="std-list" href="#" @click.prevent="getStandard">{{listItem}}</a>
+            </template>
+        </div>
+        <div id="btn-back" @click="goBack">
+            Back
+        </div>
+        <div id="standard">{{stdDesc}}</div>
     </div>
 
     <!-- CDNS for jquery and bootstrap -->
@@ -29,10 +30,11 @@
     <script src="https://unpkg.com/vue@2.5.2/dist/vue.js" charset="utf-8"></script>
 
     <!-- uncomment this if on gapps -->
-      <?!= include('standards'); ?>
-      <?!= include('javascript'); ?>
-    <!-- uncomment this if local -->
-      <!-- <script src="standards.js" charset="utf-8"></script> -->
-      <!-- <script src="javascript.js" charset="utf-8"></script> -->
-  </body>
+    <?!= include('standards'); ?>
+    <?!= include('javascript'); ?>
+            <!-- uncomment this if local -->
+            <!-- <script src="standards.js" charset="utf-8"></script> -->
+            <!-- <script src="javascript.js" charset="utf-8"></script> -->
+</body>
+
 </html>
