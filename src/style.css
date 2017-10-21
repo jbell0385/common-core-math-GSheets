@@ -1,9 +1,10 @@
+
 body{
     font-family:sans-serif;
 }
 
 .std-list{
-    display:inline-block;
+    display:flex;
 }
 
 #list-container{
