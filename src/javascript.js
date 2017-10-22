@@ -3,19 +3,25 @@ new Vue({
     el:'#app',
     data:{
         message:"",
-        listItems:["Mathematics","English Language Arts"],
         breadCrumb:[],
         curTarg:"",
         targObj:{},
         regEx:/\w*\.\w*\.\w*/,
         stdDesc:""
     },
+    computed:{
+        listItems:["Mathematics","English Language Arts"]
+    }
     methods:{
         getStandard: function(event){
             if(event){
+                //get the text of the list item clicked.
                 this.curTarg = event.currentTarget.innerText;
+                //check to see if item is x.xx.x   H.3A.
                 if(this.regEx.exec(this.curTarg)!==null){
+                    //returns standard object
                     this.targObj = this.targObjGenerator();
+                    //Standard (stdDesc) populates html template
                     this.stdDesc = this.targObj[this.curTarg];
                 }else{
                     this.breadCrumb.push(this.curTarg);
