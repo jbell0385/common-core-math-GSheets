@@ -10,10 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/jbell0385/common-core-math-GSheets.git"
   },
-  "author": "",
+  "author": "Jeremy Bell",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jbell0385/common-core-math-GSheets/issues"
   },
-  "homepage": "https://github.com/jbell0385/common-core-math-GSheets#readme"
+  "homepage": "https://github.com/jbell0385/common-core-math-GSheets#readme",
+  "devDependencies": {
+    "excel-as-json": "^2.0.1"
+  }
 }
