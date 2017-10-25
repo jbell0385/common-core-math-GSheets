@@ -6,7 +6,7 @@ new Vue({
         breadCrumb:[],
         curTarg:"",
         targObj:["Mathematics","English Language Arts"],
-        regExLastStd:/\w*\.\w*\.\w*/,
+        regExLastStd:/\w*\.\w*\-?\w*\.\w*/,
         regExHead:/(heading)/,
         regExDesc:/(description)/,
         stdText:"",
