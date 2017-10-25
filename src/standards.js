@@ -458,10 +458,10 @@ var standards = {
       },
       "8.SP": {
         "description": 'Statistics and Probability',
-        "8.SP.1": 'Construct and interpret scatter plots for bivariate measurement data to investigate patterns of association between two quantities. Describe patterns such as clustering, outliers, positive or negative association, linear association, and nonlinear association.',
-        "8.SP.1": 'Know that straight lines are widely used to model relationships between two quantitative variables. For scatter plots that suggest a linear association, informally fit a straight line, and informally assess the model fit by judging the closeness of the data points to the line.',
-        "8.SP.1": 'Use the equation of a linear model to solve problems in the context of bivariate measurement data, interpreting the slope and intercept. For example, in a linear model for a biology experiment, interpret a slope of 1.5 cm/hr as meaning that an additional hour of sunlight each day is associated with an additional 1.5 cm in mature plant height.',
-        "8.SP.1": 'Understand that patterns of association can also be seen in bivariate categorical data by displaying frequencies and relative frequencies in a two-way table. Construct and interpret a two-way table summarizing data on two categorical variables collected from the same subjects. Use relative frequencies calculated for rows or columns to describe possible association between the two variables. For example, collect data from students in your class on whether or not they have a curfew on school nights and whether or not they have assigned chores at home. Is there evidence that those who have a curfew also tend to have chores?'
+        "8.SP.A.1": 'Construct and interpret scatter plots for bivariate measurement data to investigate patterns of association between two quantities. Describe patterns such as clustering, outliers, positive or negative association, linear association, and nonlinear association.',
+        "8.SP.A.2": 'Know that straight lines are widely used to model relationships between two quantitative variables. For scatter plots that suggest a linear association, informally fit a straight line, and informally assess the model fit by judging the closeness of the data points to the line.',
+        "8.SP.A.3": 'Use the equation of a linear model to solve problems in the context of bivariate measurement data, interpreting the slope and intercept. For example, in a linear model for a biology experiment, interpret a slope of 1.5 cm/hr as meaning that an additional hour of sunlight each day is associated with an additional 1.5 cm in mature plant height.',
+        "8.SP.A.4": 'Understand that patterns of association can also be seen in bivariate categorical data by displaying frequencies and relative frequencies in a two-way table. Construct and interpret a two-way table summarizing data on two categorical variables collected from the same subjects. Use relative frequencies calculated for rows or columns to describe possible association between the two variables. For example, collect data from students in your class on whether or not they have a curfew on school nights and whether or not they have assigned chores at home. Is there evidence that those who have a curfew also tend to have chores?'
       }
     },
     "High School - Number and Quantity": {
@@ -806,29 +806,225 @@ var standards = {
         "heading04":"Range of Reading and Level of Text Complexity:",
         "RLK.10":'Actively engage in group reading activities with purpose and understanding.'
       },
-      "Grade 1": {},
-      "Grade 2": {},
-      "Grade 3": {},
-      "Grade 4": {},
-      "Grade 5": {},
-      "Grade 6": {},
-      "Grade 7": {},
-      "Grade 8": {},
-      "Grade 9-10": {},
-      "Grade 11-12": {}
+      "Grade 1": {
+          "description":'Reading: Literature - Grade 1',
+          "heading01":'Key Ideas and Details:',
+          "RL.1.1":'Ask and answer questions about key details in a text.',
+          "RL.1.2":'Retell stories, including key details, and demonstrate understanding of their central message or lesson.',
+          "RL.1.3":'Describe characters, settings, and major events in a story, using key details.',
+          'heading02':'Craft and Structure:',
+          "RL.1.4":'Identify words and phrases in stories or poems that suggest feelings or appeal to the senses.',
+          "RL.1.5":'Explain major differences between books that tell stories and books that give information, drawing on a wide reading of a range of text types.',
+          "RL.1.6":'Identify who is telling the story at various points in a text.',
+          "heading03":'Integration of Knowledge and Ideas:',
+          "RL.1.7":'Use illustrations and details in a story to describe its characters, setting, or events.',
+          "RL.1.8":'(RL.1.8 not applicable to literature)',
+          "RL.1.9":'Compare and contrast the adventures and experiences of characters in stories.',
+          "heading04":'Range of Reading and Level of Text Complexity:',
+          "RL.1.10":'With prompting and support, read prose and poetry of appropriate complexity for grade 1.'
+      },
+      "Grade 2": {
+        "description":'Reading: Literature - Grade 2',
+        'heading01':'Key Ideas and Details:',
+        "RL.2.1":'Ask and answer such questions as who, what, where, when, why, and how to demonstrate understanding of key details in a text.',
+        "RL.2.2":'Recount stories, including fables and folktales from diverse cultures, and determine their central message, lesson, or moral.',
+        "RL.2.3":'Describe how characters in a story respond to major events and challenges.',
+        "heading02":'Craft and Structure:',
+        "RL.2.4":'Describe how words and phrases (e.g., regular beats, alliteration, rhymes, repeated lines) supply rhythm and meaning in a story, poem, or song.',
+        "RL.2.5":'Describe the overall structure of a story, including describing how the beginning introduces the story and the ending concludes the action.',
+        "RL.2.6":'Acknowledge differences in the points of view of characters, including by speaking in a different voice for each character when reading dialogue aloud.',
+        "RL.2.7":'Use information gained from the illustrations and words in a print or digital text to demonstrate understanding of its characters, setting, or plot.',
+        "heading03":'Integration of Knowledge and Ideas:',
+        "RL.2.8":'(RL.2.8 not applicable to literature)',
+        "RL.2.9":'Compare and contrast two or more versions of the same story (e.g., Cinderella stories) by different authors or from different cultures.',
+        "heading04":'Range of Reading and Level of Text Complexity:',
+        "RL.2.10":'By the end of the year, read and comprehend literature, including stories and poetry, in the grades 2-3 text complexity band proficiently, with scaffolding as needed at the high end of the range.'
+      },
+      "Grade 3": {
+        "description":'Reading: Literature - Grade 3',
+        'heading01':'Key Ideas and Details:',
+        'RL.3.1':'Ask and answer questions to demonstrate understanding of a text, referring explicitly to the text as the basis for the answers.',
+        'RL.3.2':'Recount stories, including fables, folktales, and myths from diverse cultures; determine the central message, lesson, or moral and explain how it is conveyed through key details in the text.',
+        'RL.3.3':'Describe characters in a story (e.g., their traits, motivations, or feelings) and explain how their actions contribute to the sequence of events',
+        'heading02':'Craft and Structure:',
+        'RL.3.4':'Determine the meaning of words and phrases as they are used in a text, distinguishing literal from nonliteral language.',
+        'RL.3.5':'Refer to parts of stories, dramas, and poems when writing or speaking about a text, using terms such as chapter, scene, and stanza; describe how each successive part builds on earlier sections.',
+        'RL.3.6':'Distinguish their own point of view from that of the narrator or those of the characters.',
+        'heading03':'Integration of Knowledge and Ideas:',
+        'RL.3.7':"Explain how specific aspects of a text's illustrations contribute to what is conveyed by the words in a story (e.g., create mood, emphasize aspects of a character or setting)",
+        'RL.3.8':'(RL.3.8 not applicable to literature)',
+        'RL.3.9':'Compare and contrast the themes, settings, and plots of stories written by the same author about the same or similar characters (e.g., in books from a series)',
+        'heading04':'Range of Reading and Level of Text Complexity:',
+        'RL.3.10':'By the end of the year, read and comprehend literature, including stories, dramas, and poetry, at the high end of the grades 2-3 text complexity band independently and proficiently.'
+      },
+      "Grade 4": {
+        "description":'Reading: Literature - Grade 4',
+        'heading01':'Key Ideas and Details:',
+        'RL.4.1':'Refer to details and examples in a text when explaining what the text says explicitly and when drawing inferences from the text.',
+        'RL.4.2':'Determine a theme of a story, drama, or poem from details in the text; summarize the text.',
+        'RL.4.3':"Describe in depth a character, setting, or event in a story or drama, drawing on specific details in the text (e.g., a character's thoughts, words, or actions).",
+        'heading02':'Craft and Structure:',
+        'RL.4.4':'Determine the meaning of words and phrases as they are used in a text, including those that allude to significant characters found in mythology (e.g., Herculean).',
+        'RL.4.5':'Explain major differences between poems, drama, and prose, and refer to the structural elements of poems (e.g., verse, rhythm, meter) and drama (e.g., casts of characters, settings, descriptions, dialogue, stage directions) when writing or speaking about a text.',
+        'RL.4.6':'Compare and contrast the point of view from which different stories are narrated, including the difference between first- and third-person narrations.',
+        "heading03":'Integration of Knowledge and Ideas:',
+        'RL.4.7':'Make connections between the text of a story or drama and a visual or oral presentation of the text, identifying where each version reflects specific descriptions and directions in the text.',
+        'RL.4.8':'(RL.4.8 not applicable to literature)',
+        'RL.4.9':'Compare and contrast the treatment of similar themes and topics (e.g., opposition of good and evil) and patterns of events (e.g., the quest) in stories, myths, and traditional literature from different cultures.',
+        'heading04':'Range of Reading and Level of Text Complexity',
+        'RL.4.10':'By the end of the year, read and comprehend literature, including stories, dramas, and poetry, in the grades 4-5 text complexity band proficiently, with scaffolding as needed at the high end of the range.'
+      },
+      "Grade 5": {
+        "description":'Reading: Literature - Grade 5',
+        "heading01":'Key Ideas and Details:',
+        "RL.5.1":'Quote accurately from a text when explaining what the text says explicitly and when drawing inferences from the text.',
+        "RL.5.2":'Determine a theme of a story, drama, or poem from details in the text, including how characters in a story or drama respond to challenges or how the speaker in a poem reflects upon a topic; summarize the text.',
+        "RL.5.3":'Compare and contrast two or more characters, settings, or events in a story or drama, drawing on specific details in the text (e.g., how characters interact).',
+        'heading02':'Craft and Structure:',
+        "RL.5.4":'Determine the meaning of words and phrases as they are used in a text, including figurative language such as metaphors and similes.',
+        "RL.5.5":'Explain how a series of chapters, scenes, or stanzas fits together to provide the overall structure of a particular story, drama, or poem.',
+        "RL.5.6":"Describe how a narrator's or speaker's point of view influences how events are described.",
+        'heading03':'Integration of Knowledge and Ideas:',
+        "RL.5.7":'Analyze how visual and multimedia elements contribute to the meaning, tone, or beauty of a text (e.g., graphic novel, multimedia presentation of fiction, folktale, myth, poem).',
+        "RL.5.8":'(RL.5.8 not applicable to literature)',
+        "RL.5.9":'Compare and contrast stories in the same genre (e.g., mysteries and adventure stories) on their approaches to similar themes and topics.',
+        'heading04':'Range of Reading adn Level of Text Complexity',
+        "RL.5.10":'By the end of the year, read and comprehend literature, including stories, dramas, and poetry, at the high end of the grades 4-5 text complexity band independently and proficiently.'
+      },
+      "Grade 6": {
+        "description":'Reading: Literature - Grade 6',
+        'heading01':'Key Ideas and Details:',
+        "RL.6.1":'Cite textual evidence to support analysis of what the text says explicitly as well as inferences drawn from the text.',
+        "RL.6.2":'Determine a theme or central idea of a text and how it is conveyed through particular details; provide a summary of the text distinct from personal opinions or judgments.',
+        "RL.6.3":"Describe how a particular story's or drama's plot unfolds in a series of episodes as well as how the characters respond or change as the plot moves toward a resolution.",
+        'heading02':'Craft and Structure:',
+        "RL.6.4":'Determine the meaning of words and phrases as they are used in a text, including figurative and connotative meanings; analyze the impact of a specific word choice on meaning and tone',
+        "RL.6.5":'Analyze how a particular sentence, chapter, scene, or stanza fits into the overall structure of a text and contributes to the development of the theme, setting, or plot.',
+        "RL.6.6":'Explain how an author develops the point of view of the narrator or speaker in a text.',
+        'heading03':'Integration of Knowledge and Ideas:',
+        "RL.6.7":'Compare and contrast the experience of reading a story, drama, or poem to listening to or viewing an audio, video, or live version of the text, including contrasting what they "see" and "hear" when reading the text to what they perceive when they listen or watch.',
+        "RL.6.8":'(RL.6.8 not applicable to literature)',
+        "RL.6.9":'Compare and contrast texts in different forms or genres (e.g., stories and poems; historical novels and fantasy stories) in terms of their approaches to similar themes and topics.',
+        'heading04':'Range of Reading and Level of Text Complexity:',
+        "RL.6.10":'By the end of the year, read and comprehend literature, including stories, dramas, and poems, in the grades 6-8 text complexity band proficiently, with scaffolding as needed at the high end of the range.'
+      },
+      "Grade 7": {
+        "description":'Reading: Literature - Grade 7',
+        'heading01':'Key Ideas and Details:',
+        'RL.7.1':'Cite several pieces of textual evidence to support analysis of what the text says explicitly as well as inferences drawn from the text.',
+        'RL.7.2':'Determine a theme or central idea of a text and analyze its development over the course of the text; provide an objective summary of the text.',
+        'RL.7.3':'Analyze how particular elements of a story or drama interact (e.g., how setting shapes the characters or plot).',
+        'heading02':'Craft and Structure:',
+        'RL.7.4':'Determine the meaning of words and phrases as they are used in a text, including figurative and connotative meanings; analyze the impact of rhymes and other repetitions of sounds (e.g., alliteration) on a specific verse or stanza of a poem or section of a story or drama.',
+        'RL.7.5':"Analyze how a drama's or poem's form or structure (e.g., soliloquy, sonnet) contributes to its meaning",
+        'RL.7.6':'Analyze how an author develops and contrasts the points of view of different characters or narrators in a text.',
+        'heading03':'Integration of Knowledge and Ideas:',
+        'RL.7.7':'Compare and contrast a written story, drama, or poem to its audio, filmed, staged, or multimedia version, analyzing the effects of techniques unique to each medium (e.g., lighting, sound, color, or camera focus and angles in a film).',
+        'RL.7.8':'(RL.7.8 not applicable to literature)',
+        'RL.7.9':'Compare and contrast a fictional portrayal of a time, place, or character and a historical account of the same period as a means of understanding how authors of fiction use or alter history.',
+        'heading04':'Range of Reading and Level of Text Complexity:',
+        'RL.7.10':'By the end of the year, read and comprehend literature, including stories, dramas, and poems, in the grades 6-8 text complexity band proficiently, with scaffolding as needed at the high end of the range.'
+      },
+      "Grade 8": {
+        "description":'Reading: Literature - Grade 8',
+        "heading01":'Key Ideas and Details:',
+        "RL.8.1":'Cite the textual evidence that most strongly supports an analysis of what the text says explicitly as well as inferences drawn from the text.',
+        "RL.8.2":'Determine a theme or central idea of a text and analyze its development over the course of the text, including its relationship to the characters, setting, and plot; provide an objective summary of the text.',
+        "RL.8.3":'Analyze how particular lines of dialogue or incidents in a story or drama propel the action, reveal aspects of a character, or provoke a decision.',
+        "heading02":'Craft and Structure:',
+        "RL.8.4":'Determine the meaning of words and phrases as they are used in a text, including figurative and connotative meanings; analyze the impact of specific word choices on meaning and tone, including analogies or allusions to other texts.',
+        "RL.8.5":'Compare and contrast the structure of two or more texts and analyze how the differing structure of each text contributes to its meaning and style.',
+        "RL.8.6":'Analyze how differences in the points of view of the characters and the audience or reader (e.g., created through the use of dramatic irony) create such effects as suspense or humor.',
+        "heading03":'Integration of Knowledge and Ideas:',
+        "RL.8.7":'Analyze the extent to which a filmed or live production of a story or drama stays faithful to or departs from the text or script, evaluating the choices made by the director or actors.',
+        "RL.8.8":'(RL.8.8 not applicable to literature)',
+        "RL.8.9":'Analyze how a modern work of fiction draws on themes, patterns of events, or character types from myths, traditional stories, or religious works such as the Bible, including describing how the material is rendered new.',
+        "heading04":'Range of Reading and Level of Text Complexity',
+        "RL.8.10":'By the end of the year, read and comprehend literature, including stories, dramas, and poems, at the high end of grades 6-8 text complexity band independently and proficiently.'
+      },
+      "Grade 9-10": {
+        "description":'Reading: Literature - Grade 9-10',
+        "heading01":"Key Ideas and Details:",
+        "RL.9-10.1":'Cite strong and thorough textual evidence to support analysis of what the text says explicitly as well as inferences drawn from the text.',
+        "RL.9-10.2":'Determine a theme or central idea of a text and analyze in detail its development over the course of the text, including how it emerges and is shaped and refined by specific details; provide an objective summary of the text.',
+        "RL.9-10.3":'Analyze how complex characters (e.g., those with multiple or conflicting motivations) develop over the course of a text, interact with other characters, and advance the plot or develop the theme.',
+        "heading02":"Craft and Structure:",
+        "RL.9-10.4":'Determine the meaning of words and phrases as they are used in the text, including figurative and connotative meanings; analyze the cumulative impact of specific word choices on meaning and tone (e.g., how the language evokes a sense of time and place; how it sets a formal or informal tone).',
+        "RL.9-10.5":"Analyze how an author's choices concerning how to structure a text, order events within it (e.g., parallel plots), and manipulate time (e.g., pacing, flashbacks) create such effects as mystery, tension, or surprise.",
+        "RL.9-10.6":'Analyze a particular point of view or cultural experience reflected in a work of literature from outside the United States, drawing on a wide reading of world literature.',
+        "heading03":'Integration of Knowledge and Ideas:',
+        "RL.9-10.7":"Analyze the representation of a subject or a key scene in two different artistic mediums, including what is emphasized or absent in each treatment (e.g., Auden's \"Musée des Beaux Arts\" and Breughel's Landscape with the Fall of Icarus).",
+        "RL.9-10.8":'(RL.9-10.8 not applicable to literature)',
+        "RL.9-10.9":'Analyze how an author draws on and transforms source material in a specific work (e.g., how Shakespeare treats a theme or topic from Ovid or the Bible or how a later author draws on a play by Shakespeare).',
+        "heading04":"Range of Reading and Level of Text Complexity:",
+        "RL.9-10.10":'By the end of grade 9, read and comprehend literature, including stories, dramas, and poems, in the grades 9-10 text complexity band proficiently, with scaffolding as needed at the high end of the range. By the end of grade 10, read and comprehend literature, including stories, dramas, and poems, at the high end of the grades 9-10 text complexity band independently and proficiently.'
+      },
+      "Grade 11-12": {
+        "description":'Reading: Literature - Grade 11-12',
+        "heading01":'Key Ideas and Details:',
+        "RL.11-12.1":'Cite strong and thorough textual evidence to support analysis of what the text says explicitly as well as inferences drawn from the text, including determining where the text leaves matters uncertain.',
+        "RL.11-12.2":'Determine two or more themes or central ideas of a text and analyze their development over the course of the text, including how they interact and build on one another to produce a complex account; provide an objective summary of the text.',
+        "RL.11-12.3":"Analyze the impact of the author's choices regarding how to develop and relate elements of a story or drama (e.g., where a story is set, how the action is ordered, how the characters are introduced and developed).",
+        "heading02":'Craft and Structure:',
+        "RL.11-12.4":'Determine the meaning of words and phrases as they are used in the text, including figurative and connotative meanings; analyze the impact of specific word choices on meaning and tone, including words with multiple meanings or language that is particularly fresh, engaging, or beautiful. (Include Shakespeare as well as other authors.)',
+        "RL.11-12.5":"Analyze how an author's choices concerning how to structure specific parts of a text (e.g., the choice of where to begin or end a story, the choice to provide a comedic or tragic resolution) contribute to its overall structure and meaning as well as its aesthetic impact.",
+        "RL.11-12.6":'Analyze a case in which grasping a point of view requires distinguishing what is directly stated in a text from what is really meant (e.g., satire, sarcasm, irony, or understatement).',
+        "heading03":'Integration of Knowledge and Ideas:',
+        "RL.11-12.7":'Analyze multiple interpretations of a story, drama, or poem (e.g., recorded or live production of a play or recorded novel or poetry), evaluating how each version interprets the source text. (Include at least one play by Shakespeare and one play by an American dramatist.)',
+        "RL.11-12.8":'(RL.11-12.8 not applicable to literature)',
+        "RL.11-12.9":'Demonstrate knowledge of eighteenth-, nineteenth- and early-twentieth-century foundational works of American literature, including how two or more texts from the same period treat similar themes or topics.',
+        "heading04":'Range of Reading and Level of Text Complexity',
+        "RL.11-12.10":'By the end of grade 11, read and comprehend literature, including stories, dramas, and poems, in the grades 11-CCR text complexity band proficiently, with scaffolding as needed at the high end of the range. By the end of grade 12, read and comprehend literature, including stories, dramas, and poems, at the high end of the grades 11-CCR text complexity band independently and proficiently.'
+      }
     },
     "Reading: Informational Text": {
-      "Kindergarten": {},
-      "Grade 1": {},
-      "Grade 2": {},
-      "Grade 3": {},
-      "Grade 4": {},
-      "Grade 5": {},
-      "Grade 6": {},
-      "Grade 7": {},
-      "Grade 8": {},
-      "Grade 9-10": {},
-      "Grade 11-12": {}
+      "Kindergarten": {
+        "description":'Reading: Informational Text - Kindergarten',
+        "heading01":'Key Ideas and Details:',
+        "RI.K.1":'With prompting and support, ask and answer questions about key details in a text.',
+        "RI.K.2":'With prompting and support, identify the main topic and retell key details of a text.',
+        "RI.K.3":'With prompting and support, describe the connection between two individuals, events, ideas, or pieces of information in a text.',
+        "heading02":"Craft and Structure:",
+        "RI.K.4":'With prompting and support, ask and answer questions about unknown words in a text.',
+        "RI.K.5":'Identify the front cover, back cover, and title page of a book.',
+        "RI.K.6":'Name the author and illustrator of a text and define the role of each in presenting the ideas or information in a text.',
+        "heading03":"Integration of Knowledge and Ideas:",
+        "RI.K.7":'With prompting and support, describe the relationship between illustrations and the text in which they appear (e.g., what person, place, thing, or idea in the text an illustration depicts).',
+        "RI.K.8":'Name the author and illustrator of a text and define the role of each in presenting the ideas or information in a text.',
+        "RI.K.9":'With prompting and support, identify basic similarities in and differences between two texts on the same topic (e.g., in illustrations, descriptions, or procedures).',
+        "heading04":"Range of Reading and Level of Text Complexity",
+        "RI.K.10":'Actively engage in group reading activities with purpose and understanding.'
+      },
+      "Grade 1": {
+        "description":'Reading: Informational Text - Grade 1'
+      },
+      "Grade 2": {
+        "description":'Reading: Informational Text - Grade 2'
+      },
+      "Grade 3": {
+        "description":'Reading: Informational Text - Grade 3'
+      },
+      "Grade 4": {
+        "description":'Reading: Informational Text - Grade 4'
+      },
+      "Grade 5": {
+        "description":'Reading: Informational Text - Grade 5'
+      },
+      "Grade 6": {
+        "description":'Reading: Informational Text - Grade 6'
+      },
+      "Grade 7": {
+        "description":'Reading: Informational Text - Grade 7'
+      },
+      "Grade 8": {
+        "description":'Reading: Informational Text - Grade 8'
+      },
+      "Grade 9-10": {
+        "description":'Reading: Informational Text - Grade 9-10'
+      },
+      "Grade 11-12": {
+        "description":'Reading: Informational Text - Grade 11-12'
+      }
     },
     "Reading: Foundational Skills": {
       "Kindergarten": {},
@@ -881,4 +1077,4 @@ var standards = {
     "Science and Technical Subjects": {},
     "Writing for HST": {}
   }
-}
+};

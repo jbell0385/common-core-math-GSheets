@@ -5,24 +5,24 @@ new Vue({
         message:"",
         breadCrumb:[],
         curTarg:"",
-        targObj:{},
-        regEx:/\w*\.\w*\.\w*/,
-        stdDesc:""
-    },
-    computed:{
+        targObj:["Mathematics","English Language Arts"],
+        regExLastStd:/\w*\.\w*\.\w*/,
+        regExHead:/(heading)/,
+        regExDesc:/(description)/,
+        stdText:"",
         listItems:["Mathematics","English Language Arts"]
-    }
+    },
     methods:{
         getStandard: function(event){
             if(event){
                 //get the text of the list item clicked.
                 this.curTarg = event.currentTarget.innerText;
                 //check to see if item is x.xx.x   H.3A.
-                if(this.regEx.exec(this.curTarg)!==null){
+                if(this.regExLastStd.exec(this.curTarg)!==null){
                     //returns standard object
                     this.targObj = this.targObjGenerator();
-                    //Standard (stdDesc) populates html template
-                    this.stdDesc = this.targObj[this.curTarg];
+                    //Standard (stdText) populates html template
+                    this.stdText = this.targObj[this.curTarg];
                 }else{
                     this.breadCrumb.push(this.curTarg);
                 }
@@ -31,7 +31,14 @@ new Vue({
             this.targObj = this.targObjGenerator();
             this.listItems = [];
             for(standard in this.targObj){
-                this.listItems.push(standard);
+                if(standard === "description"){
+                    console.log(this.targObj[standard]);
+                    this.listItems.push({"description":this.targObj[standard]});
+                }else if(this.regExHead.exec(standard)){ //if "headingxx"
+                    this.listItems.push({"heading":this.targObj[standard]});
+                }else{
+                    this.listItems.push(standard);
+                }
             }
             console.log(this.curTarg);
             console.log(this.breadCrumb);
@@ -56,7 +63,7 @@ new Vue({
                 this.breadCrumb.pop();
                 this.listItems = ["Mathematics","English Language Arts"];
             }
-            this.stdDesc = "";
+            this.stdText = "";
         }
     }
 });

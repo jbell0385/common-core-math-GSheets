@@ -16,13 +16,19 @@
       <div class="container">
         <div id="listContainer">
             <template class="std-list" v-for="listItem in listItems">
-                <a class="std-list" href="#" @click.prevent="getStandard">{{listItem}}</a>
+                <h5 v-if="typeof listItem === 'object' && listItem['description']">
+                    {{listItem['description']}}
+                </h5>
+                <p v-else-if="typeof listItem ==='object' && listItem['heading']">
+                    {{listItem['heading']}}
+                </p>
+                <a v-else class="std-list" href="#" @click.prevent="getStandard">{{listItem}}</a>
             </template>
         </div>
         <div id="btn-back" @click="goBack">
             Back
         </div>
-        <div id="standard">{{stdDesc}}</div>
+        <div id="standard">{{stdText}}</div>
       </div>
     </div>
 
