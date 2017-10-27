@@ -14,20 +14,22 @@
 <body>
     <div id="app">
       <div class="container">
+        <div id="btn-back" v-if="btnBackVisible" @click="goBack">
+            Back
+        </div>
+        <hr v-if="btnBackVisible">
         <div id="listContainer">
             <template class="std-list" v-for="listItem in listItems">
-                <h5 v-if="typeof listItem === 'object' && listItem['description']">
+                <h5 class="description" v-if="typeof listItem === 'object' && listItem['description']">
                     {{listItem['description']}}
                 </h5>
-                <p v-else-if="typeof listItem ==='object' && listItem['heading']">
+                <p class="heading" v-else-if="typeof listItem ==='object' && listItem['heading']">
                     {{listItem['heading']}}
                 </p>
                 <a v-else class="std-list" href="#" @click.prevent="getStandard">{{listItem}}</a>
             </template>
         </div>
-        <div id="btn-back" @click="goBack">
-            Back
-        </div>
+
         <div id="standard">{{stdText}}</div>
       </div>
     </div>

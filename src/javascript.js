@@ -10,7 +10,8 @@ new Vue({
         regExHead:/(heading)/,
         regExDesc:/(description)/,
         stdText:"",
-        listItems:["Mathematics","English Language Arts"]
+        listItems:["Mathematics","English Language Arts"],
+        btnBackVisible:false
     },
     methods:{
         getStandard: function(event){
@@ -40,8 +41,7 @@ new Vue({
                     this.listItems.push(standard);
                 }
             }
-            console.log(this.curTarg);
-            console.log(this.breadCrumb);
+            this.btnBackVisible = true;
         },
         targObjGenerator: function(){
             var vm = this;
@@ -62,6 +62,7 @@ new Vue({
             }else{
                 this.breadCrumb.pop();
                 this.listItems = ["Mathematics","English Language Arts"];
+                this.btnBackVisible = false;
             }
             this.stdText = "";
         }
