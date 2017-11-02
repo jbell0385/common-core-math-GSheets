@@ -30,8 +30,20 @@
             </template>
         </div>
 
-        <div id="standard">{{stdText}}</div>
-      </div>
+        <template v-if="stdText">
+        <div id="standard" class="card">
+            <p id="stdTitle" class="card-title">
+                Standard
+            </p>
+            <p class="card-text">{{stdText}}</p>
+            <a href="#" class="btn btn-primary">Paste Short</a>
+            <a href="#" class="btn btn-primary">Paste Full</a>
+          </div>
+         </template>
+    </div>
+
+
+        <!-- <div id="standard">{{stdText}}</div> -->
     </div>
 
     <!-- CDNS for jquery and bootstrap -->
