@@ -24,7 +24,6 @@ new Vue({
                     this.targObj = this.targObjGenerator();
                     //Standard (stdText) populates html template
                     this.stdText = this.targObj[this.curTarg];
-                    google.script.run.addStandardName(this.curTarg,this.stdText);
                 }else{
                     this.breadCrumb.push(this.curTarg);
                 }
@@ -66,6 +65,12 @@ new Vue({
                 this.btnBackVisible = false;
             }
             this.stdText = "";
+        },
+        pasteShort:function(){
+            google.script.run.addStandardName(this.curTarg,this.stdText);
+        },
+        pasteFull:function(){
+            google.script.run.addStandard(this.stdText);
         }
     }
 });

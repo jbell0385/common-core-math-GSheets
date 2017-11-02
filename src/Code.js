@@ -23,9 +23,15 @@ function addStandardName(stdName,std){
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var sheet = ss.getActiveSheet();
   var range = sheet.getActiveCell();
-  Logger.log(stdName);
   range.setValue(stdName);
   range.setNote(std);
+}
+
+function addStandard(std){
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getActiveSheet();
+  var range = sheet.getActiveCell();
+  range.setValue(std);
 }
 
 //Google Apps Script Autocomplete Utility and Document Setup

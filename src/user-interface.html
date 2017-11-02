@@ -8,18 +8,20 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <?!= include('style'); ?>
 </head>
 
 <body>
     <div id="app">
-      <div class="container">
-        <div id="btn-back" v-if="btnBackVisible" @click="goBack">
-            Back
-        </div>
-        <hr v-if="btnBackVisible">
-        <div id="listContainer">
-            <template class="std-list" v-for="listItem in listItems">
+        <div class="container">
+            <div id="btn-back" v-if="btnBackVisible" @click="goBack">
+                Back
+            </div>
+            <hr v-if="btnBackVisible">
+            <h5 v-if="!btnBackVisible">Choose a Domain</h5>
+            <div id="listContainer">
+                <template class="std-list" v-for="listItem in listItems">
                 <h5 class="description" v-if="typeof listItem === 'object' && listItem['description']">
                     {{listItem['description']}}
                 </h5>
@@ -28,22 +30,21 @@
                 </p>
                 <a v-else class="std-list" href="#" @click.prevent="getStandard">{{listItem}}</a>
             </template>
-        </div>
+            </div>
 
-        <template v-if="stdText">
+            <template v-if="stdText">
         <div id="standard" class="card">
             <p id="stdTitle" class="card-title">
-                Standard
+                Standard {{curTarg}}
             </p>
             <p class="card-text">{{stdText}}</p>
-            <a href="#" class="btn btn-primary">Paste Short</a>
-            <a href="#" class="btn btn-primary">Paste Full</a>
+            <div id="btnContainer">
+                <a href="#" class="btn btn-secondary mr-1" @click.prevent="pasteShort">Paste Short</a>
+                <a href="#" class="btn btn-secondary" @click.prevent="pasteFull">Paste Full</a>
+            </div>
           </div>
          </template>
-    </div>
-
-
-        <!-- <div id="standard">{{stdText}}</div> -->
+        </div>
     </div>
 
     <!-- CDNS for jquery and bootstrap -->
@@ -54,7 +55,7 @@
 
     <!-- uncomment this if on gapps -->
     <?!= include('standards'); ?>
-    <?!= include('javascript'); ?>
+        <?!= include('javascript'); ?>
             <!-- uncomment this if local -->
             <!-- <script src="standards.js" charset="utf-8"></script> -->
             <!-- <script src="javascript.js" charset="utf-8"></script> -->

@@ -1,7 +1,8 @@
 
 body{
-    font-family:sans-serif;
+    font-family:'Roboto', sans-serif;
     color:#373d3f;
+    font-size: 14px;
     a{
         text-decoration: none;
         color:#0786a0;
@@ -19,6 +20,7 @@ body{
 
 .std-list{
     display:flex;
+    margin-left:5px;
 }
 
 #list-container{
@@ -26,20 +28,31 @@ body{
     flex-direction: column;
 }
 
-.description{
-    margin:5px 0px 5px 0px;
-}
-
 #btn-back{
-    margin:10px 0px 5px 0px;
+    display:flex;
+    align-items: center;
+    height:25px;
+    width:35px;
     &:hover{
         color:#0786a0;
         cursor:pointer;
     }
 }
 
+hr{
+    margin-top:0.5rem;
+    margin-bottom:0.5rem;
+}
+
+.description{
+    margin:5px 0px 10px 0px;
+    font-weight: bold;
+}
+
 .heading{
-    margin:5px 0px 1px 0px;
+    margin:5px 0px 3px 0px;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 #standard{
@@ -49,4 +62,10 @@ body{
     #stdTitle{
         font-weight: bold;
     }
+
+    #btnContainer{
+        display:flex;
+        flex-direction: row;
+    }
+
 }
