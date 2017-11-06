@@ -1,7 +1,7 @@
 function onOpen() {
   SpreadsheetApp.getUi() // Or DocumentApp or FormApp.
-      .createMenu('CCSS')
-      .addItem('Show sidebar', 'showSidebar')
+      .createAddonMenu()
+      .addItem('Find Standard', 'showSidebar')
       .addToUi();
 }
 

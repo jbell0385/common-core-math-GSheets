@@ -33,7 +33,6 @@ new Vue({
             this.listItems = [];
             for(standard in this.targObj){
                 if(standard === "description"){
-                    console.log(this.targObj[standard]);
                     this.listItems.push({"description":this.targObj[standard]});
                 }else if(this.regExHead.exec(standard)){ //if "headingxx"
                     this.listItems.push({"heading":this.targObj[standard]});
